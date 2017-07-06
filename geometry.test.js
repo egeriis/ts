@@ -17,7 +17,12 @@ test('throws errors when passing non-numbers', () => {
   expect(() => triangleType('shift happens', Math.PI, Math.PI)).toThrow();
 });
 
-test('rhwos errors when passing zero or negative numbers', () => {
+test('throws errors when passing zero or negative numbers', () => {
   expect(() => triangleType(Math.PI, Math.PI, 0)).toThrow();
   expect(() => triangleType(Math.PI, -1 * Math.PI, Math.PI)).toThrow();
+});
+
+test('throws error when passing invalid side lengths', () => {
+  expect(() => triangleType(5, 7, 12)).toThrow();
+  expect(() => triangleType(1, 1, 5)).toThrow();
 });
