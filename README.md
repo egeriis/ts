@@ -1,13 +1,13 @@
 # Tradeshift Triangle Test
 
-#### Instructions
+### Instructions
 
 - To run: `npm start`
 - To test: `npm test`
 
 Make sure to install dependencies through npm first.
 
-#### Considerations & Design Decisions
+### Considerations & Design Decisions
 
 The first decision I made, was to use a simple function which takes 3 arguments (length of each side of the triangle) which is placed in a separate file.
 
